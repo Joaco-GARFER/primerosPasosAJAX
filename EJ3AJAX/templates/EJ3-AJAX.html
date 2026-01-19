@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='EJ3-AJAX.css') }}">
+</head>
+<body>
+     <h3>Ingrese el primer numero </h3>
+        <input type="number" name="num1" id="num1" required>
+        <h3>Ingrese el segundo numero </h3>
+        <input type="number" name="num2" id="num2" required>
+         <h3>Eliga una operacion</h3>
+            <button onclick="operacion('suma')">sumar</button>
+            <button onclick="operacion('resta')">restar</button>
+            <button onclick="operacion('multiplicacion')">multiplicar</button>
+            <button onclick="operacion('division')">dividir</button>
+            
+
+       <h2 id="respuesta"></h2>
+   <script src="/static/EJ3-AJAX.js"></script>
+</body>
+</html>

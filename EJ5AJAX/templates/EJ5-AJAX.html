@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>BBVA</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='EJ5-AJAX.css') }}">
+</head>
+<body>
+    <h1>BBVA francés</h1>
+    <input type="number" name="saldoInicial" id="saldoInicial" placeholder="Ingrese un Monto" required>
+    
+    <script src="/static/EJ5-AJAX.js"></script>
+    <div>
+        <h2>Elija una Operacion a Realizar</h2>
+        <button onclick="operanDing('depositar')">Depositar</button>
+        <button onclick="operanDing('retirar')">retirar</button>
+        <button onclick="operanDing('transferir')">transferir</button>
+    </div>
+    
+    <ul id="NEGATIVA"></ul>
+    
+    <ul id="lista"></ul>
+</body>
+</html>

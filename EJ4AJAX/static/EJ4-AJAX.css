@@ -1,0 +1,91 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+/* BODY */
+body {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  min-height: 100vh;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+/* CONTENEDOR PRINCIPAL */
+body > * {
+  background: #ffffff;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* INPUT */
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin-bottom: 15px;
+}
+
+/* TITULOS */
+h3 {
+  text-align: center;
+  color: #1e3c72;
+  margin-bottom: 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #2a5298;
+}
+
+/* BOTONES */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  background: #1e90ff;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #166fc2;
+}
+
+/* MENSAJE SERVER */
+#respuestaServer {
+  text-align: center;
+  font-weight: bold;
+  color: #1e3c72;
+}
+
+/* LISTA DE MOVIMIENTOS */
+#listaMv {
+  list-style: none;
+  padding: 0;
+}
+
+#listaMv li {
+  background: #f4f6f8;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  border-left: 5px soli
+}

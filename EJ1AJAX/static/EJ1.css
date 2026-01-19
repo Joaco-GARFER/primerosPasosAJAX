@@ -1,0 +1,56 @@
+body {
+    background-color: rgb(71, 185, 170);}
+table{
+    background-color: rgb(0, 0, 0);
+    color: rgb(233, 233, 233);
+
+}input[type="text"]{
+    background-color: rgb(32, 0, 119);
+    color: aliceblue;
+    width: 290px;
+}
+select{
+    background-color: rgb(39, 127, 251);
+    color: rgb(255, 255, 255);             /* color del texto */
+    padding: 10px ;            /* agranda el botón */
+    border-radius: 5px;       /* bordes redondeados */
+    border: none;             /* sin borde */
+    cursor: pointer;          /* cambia el cursor */
+    font-size: 12px;          /* tamaño del texto */
+    width: 150px; ;
+}
+input[type='submit']{
+    background-color: rgb(0, 135, 18);
+    color: rgb(255, 255, 255);             /* color del texto */
+    padding: 10px ;            /* agranda el botón */
+    border-radius: 5px;       /* bordes redondeados */
+    border: none;             /* sin borde */
+    cursor: pointer;          /* cambia el cursor */
+    font-size: 12px;          /* tamaño del texto */
+    width: 150px; ;
+}
+input[type='reset']{
+     background-color: rgb(135, 29, 0);
+    color: rgb(255, 255, 255);             /* color del texto */
+    padding: 10px ;            /* agranda el botón */
+    border-radius: 5px;       /* bordes redondeados */
+    border: none;             /* sin borde */
+    cursor: pointer;          /* cambia el cursor */
+    font-size: 12px;          /* tamaño del texto */
+    width: 150px; ;
+}
+h1{
+    background-color: rgb(0, 106, 135);
+}
+input[type='button']{
+    background-color: rgb(0, 135, 18);
+    color: rgb(255, 255, 255);             /* color del texto */
+    padding: 10px ;            /* agranda el botón */
+    border-radius: 5px;       /* bordes redondeados */
+    border: none;             /* sin borde */
+    cursor: pointer;          /* cambia el cursor */
+    font-size: 12px;          /* tamaño del texto */
+    width: 150px; ;
+
+    
+}

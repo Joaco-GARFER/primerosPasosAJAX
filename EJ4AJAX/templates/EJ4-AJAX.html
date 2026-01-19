@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='EJ4-AJAX.css') }}">
+</head>
+<body>
+    <H1>Bienvenido a Control de Gastos</H1>
+    <h5>El programa que le ayudará no solo a ahorrar, si no, a gastar mejor</h5>
+    <input type="number" placeholder="Ingrese el monto del Gasto" id="monto" width="100px" height="100px" required>
+    <h3>Eliga un tipo de Gasto</h3>
+            <button onclick="operacion('Supermercado')">Supermercado</button>
+            <br>
+            <button onclick="operacion('Hipoteca')">Hipoteca</button>
+            <br>
+            <button onclick="operacion('Luz')">Luz</button>
+            <br>
+            <button onclick="operacion('Agua')">Agua</button>
+            <br>
+            <button onclick="operacion('Gas')">Gas</button>
+   <script src="/static/EJ4-AJAX.js"></script>         
+   <h2 id="respuestaServer"></h2>
+   <ul id="listaMv"></ul>
+    
+   
+   
+</body>
+</html>

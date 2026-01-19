@@ -1,0 +1,115 @@
+/* RESET BÁSICO */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* FONDO GENERAL */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #004481, #072146);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  color: #fff;
+}
+
+/* TÍTULO */
+h1 {
+  margin-bottom: 30px;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* INPUT SALDO */
+input[type="number"] {
+  width: 100%;
+  max-width: 350px;
+  padding: 14px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  margin-bottom: 25px;
+}
+
+/* CONTENEDOR DE BOTONES */
+div {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  color: #072146;
+  margin-bottom: 30px;
+}
+
+/* SUBTÍTULO */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* BOTONES */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #1973e8;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #1259b2;
+  transform: translateY(-1px);
+}
+
+/* LISTAS */
+ul {
+  width: 100%;
+  max-width: 520px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+/* MOVIMIENTOS NORMALES */
+#lista li {
+  background: #ffffff;
+  color: #072146;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  font-size: 14px;
+}
+
+/* MOVIMIENTOS NEGATIVOS */
+#NEGATIVA li {
+  background: #ffe5e5;
+  color: #a40000;
+  padding: 14px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border-left: 6px solid #d60000;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  div {
+    padding: 20px;
+  }
+}

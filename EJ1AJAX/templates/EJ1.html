@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='EJ1.css') }}">
+</head>
+<body>
+    <input type="text" id="nombre" placeholder="Ingrese un Nombre"><!--FUENTE DE DATOS  -->
+
+    <button onclick="enviarNombre()">Enviar</button> <!-- DISPARA LA ACCION -->
+
+    <p id="respuesta"></p> <!-- LUGAR DONDE SE MOSTRARA LA RESPUESTA DEL SERVIDOR -->
+
+    <script src="/static/EJ1.js"></script> <!-- CONECTAMOS CON JS AJAX VIVE ACA -->
+</body>
+</html>
