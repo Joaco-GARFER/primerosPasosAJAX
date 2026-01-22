@@ -2,8 +2,10 @@ function operanDing(accion){
     const saldoInicial = document.getElementById('saldoInicial').value;
     const nombreUser = document.getElementById('nombreUser').value;
     const soloTexto =  /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/; //RAGEX
+
     if (nombreUser === "" || !soloTexto.test(nombreUser)){
         alert('Debe ingresar un Nombre de usario Solo en Letras Sin numeros ni Caracteres Especiales')
+        return
     }
 
     if (saldoInicial === "" || saldoInicial < 0){
@@ -33,7 +35,7 @@ function operanDing(accion){
         if (data.negativos) {
             data.negativos.forEach(neg => {
                 const li = document.createElement("li");
-                li.textContent = `${neg.mensaje} | Operación: ${neg.accion} | Saldo Actual: $${neg.monto}`;
+                li.textContent = `${neg.mensaje} | Operación: ${neg.accion}| Realizada por: ${mov.nombre} | Saldo Actual: $${neg.monto}`;
                 listaNegativa.appendChild(li);
             });
         }
