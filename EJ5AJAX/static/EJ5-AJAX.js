@@ -35,7 +35,7 @@ function operanDing(accion){
         if (data.negativos) {
             data.negativos.forEach(neg => {
                 const li = document.createElement("li");
-                li.textContent = `${neg.mensaje} | Operación: ${neg.accion}| Realizada por: ${mov.nombre} | Saldo Actual: $${neg.monto}`;
+                li.textContent = `${neg.mensaje} | Operación: ${neg.accion}| Realizada por: ${neg.nombre} | Saldo Actual: $${neg.monto}`;
                 listaNegativa.appendChild(li);
             });
         }
@@ -47,7 +47,7 @@ function operanDing(accion){
         if (data.movimientos) {
             data.movimientos.forEach(mov => {
                 const li = document.createElement("li");
-                li.textContent = `Operación: ${mov.accion}| Realizada por${mov.nombre} | Monto: $${mov.monto} | Saldo: $${mov.saldo}`;
+                li.textContent = `Operación: ${mov.accion}| Realizada por: ${mov.nombre} | Monto: $${mov.monto} | Saldo: $${mov.saldo}`;
                 lista.appendChild(li);
             });
         }

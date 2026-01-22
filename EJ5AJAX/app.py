@@ -28,7 +28,8 @@ def operaciones():
                'mensaje': 'USTED NO PUEDE REALIZAR ESTA OPERACION POR QUE NO POSEE DINERO EN SU CUENTA',
                'accion': accion,
                'saldo': saldoPrimero,
-                'monto': saldo_Mov
+                'monto': saldo_Mov,
+                'nombre': nombreUsuario
            })
                  
   movimientos_saldo.append({
