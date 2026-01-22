@@ -1,5 +1,10 @@
 function operanDing(accion){
     const saldoInicial = document.getElementById('saldoInicial').value;
+    const nombreUser = document.getElementById('nombreUser').value;
+    const soloTexto =  /^[A-Za-zÁÉÍÓÚáéíóúÑñ ]+$/; //RAGEX
+    if (nombreUser === "" || !soloTexto.test(nombreUser)){
+        alert('Debe ingresar un Nombre de usario Solo en Letras Sin numeros ni Caracteres Especiales')
+    }
 
     if (saldoInicial === "" || saldoInicial < 0){
         alert('Debe ingresar un Saldo Inicial positivo');
@@ -13,7 +18,8 @@ function operanDing(accion){
             },
             body: JSON.stringify({  
               saldoInicial:saldoInicial,
-              accion:accion
+              accion:accion,
+              nombreUser: nombreUser
             })
     })
 
@@ -39,7 +45,7 @@ function operanDing(accion){
         if (data.movimientos) {
             data.movimientos.forEach(mov => {
                 const li = document.createElement("li");
-                li.textContent = `Operación: ${mov.accion} | Monto: $${mov.monto} | Saldo: $${mov.saldo}`;
+                li.textContent = `Operación: ${mov.accion}| Realizada por${mov.nombre} | Monto: $${mov.monto} | Saldo: $${mov.saldo}`;
                 lista.appendChild(li);
             });
         }

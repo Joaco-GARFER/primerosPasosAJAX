@@ -16,6 +16,7 @@ def operaciones():
   dataEntry = request.json
   saldoPrimero = float(dataEntry['saldoInicial'])
   accion= dataEntry['accion']
+  nombreUsuario=dataEntry['nombreUser']
   
   if accion == 'depositar':
     saldo_Mov+=saldoPrimero
@@ -33,8 +34,8 @@ def operaciones():
   movimientos_saldo.append({
         "accion": accion.capitalize(),
         'monto': saldoPrimero,
-        "saldo": saldo_Mov                 
-        
+        "saldo": saldo_Mov,                 
+        'nombre': nombreUsuario
     })
   return jsonify ({
       'movimientos':  movimientos_saldo,
@@ -43,7 +44,7 @@ def operaciones():
 #probando ajustes de git  
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
 
 
         
